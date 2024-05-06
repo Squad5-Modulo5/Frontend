@@ -1,0 +1,25 @@
+:root {
+    /* primary colors */
+    --off-white: #f5f5f5;
+    --primary-color-primary: #f2f2f2;
+
+    /* yellow pallet */
+    --primary-color-yellow: #ffcc00;
+    --secondary-color-yellow: #e6b700;
+    --terciary-color-yellow: #bf9900;
+    --backgroud-color-yellow: #806600;
+    --backgroud-color2-yellow: #403300;
+
+    /* blue pallet */
+    --primary-color-blue: #006bf7;
+    --secondary-color-blue: #0055c4;
+    --terciary-color-blue: #4b97fa;
+    --backgroud-color-blue: #244878;
+    --backgroud-color2-blue: #003478;
+
+    /* green pallet */
+    --primary-color-green: #8cbf3f;
+    --secondary-color-green: #b0d973;
+    --terciary-color-green: #3c7359;
+    --backgroud-color-green: #025930;
+}
