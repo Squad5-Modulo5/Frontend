@@ -1,0 +1,21 @@
+button {
+    padding: 0.4rem 1rem;
+    border-radius: 0.7rem;
+    border: 1px solid transparent;
+    font-size: 0.8rem;
+    font-weight: 1000;
+    font-family: inherit;
+    background-color: var(--secondary-color-yellow);
+    cursor: pointer;
+    color: var(--backgroud-color-green);
+    transition: background-color 0.25s, color 0.25s;
+    font-family: "Silkscreen";
+  }
+  button:hover {
+    color: var(--off-white);
+    background-color: var(--backgroud-color-green);
+  }
+  /* button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  } */
