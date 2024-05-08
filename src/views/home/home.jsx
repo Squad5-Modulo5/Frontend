@@ -6,7 +6,7 @@ import Presentation from "../../components/presentation/presentation"
 export default function Home (){
     return(
         <div>
-            <Header/>
+            <Header home={"Home"} />
             <Presentation/>
             <section></section>
             <section></section>
