@@ -12,7 +12,7 @@ export default function Header ({home}){
                 <li><Link to={`/`}>{home}</Link></li>
                 <li><a href="">Calculator</a></li>
             </ul>
-            <Button name={"Login"}/>
+            <Button link={`/login`} name={"Login"}/>
             <Outlet/>
         </div>
     )
