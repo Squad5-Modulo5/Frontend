@@ -1,5 +1,6 @@
 .presentation{
-    margin: 0;
+    position: relative;
+    margin-top: -3vw;
     height: 636px;
     display: flex;
     align-items: center;
@@ -9,8 +10,9 @@
 
 .texts {
     /* background-color: red; */
-    padding: 1rem 0rem 5rem 2rem;
+    padding: 5vw 0rem 5rem 2rem;
     align-items: center;
+    /* background-color: black */
 }
 
 .presentation h1 {
@@ -27,15 +29,134 @@
 .presentation p{
     font-family:'Josefin_slab';
     font-size: 26pt;
+    margin-top: 0.5rem;
     color: var(--off-white);
 }
 
 .presentation img {
-    /* background-color: black; */
+    /* background-color:aqua; */
     position: relative;
-    margin-left: -20rem;
+    margin-left: -2vw;
     z-index: 1;
     width:692px;
     height:582px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 2560px) {
+
+    .presentation h1 {
+        font-size: 50pt;
+    }
+    .presentation h2 {   
+        font-size: 35pt;
+    }
+    .presentation p{
+        font-size: 26pt;
+    }
+    
+}
+
+@media screen and (max-width: 1440px) {
+
+    .presentation{
+        height: calc(636px - 20%);
+    }
+
+    .presentation img {
+        margin-left: -4vw;
+        width:calc(692px - 20%);
+        height:calc(582px - 20%);
+    }
+
+    .presentation h1 {
+        font-size: calc(50pt - 120%);
+    }
+    .presentation h2 {
+        font-size: calc(35pt - 120%);
+    }
+    
+    .presentation p{
+        font-size: calc(26pt - 80%);
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+
+    .presentation{
+        height: calc(636px - 30%);
+    }
+
+    .presentation img {
+        width:calc(692px - 30%);
+        height:calc(582px - 30%);
+    }
+
+    .presentation h1 {
+        font-size: calc(50pt - 150%);
+    }
+    .presentation h2 {
+        font-size: calc(35pt - 100%);
+    }
+    
+    .presentation p{
+        font-size: calc(26pt - 100%);
+    }
+    
+}
+@media screen and (max-width: 768px) {
+
+    .presentation{
+        height: calc(636px - 40%);
+    }
+
+    .presentation img {
+        width:calc(692px - 50%);
+        height:calc(582px - 50%);
+    }
+
+    .presentation h1 {
+        font-size: calc(50pt - 230%);
+    }
+    .presentation h2 {
+        font-size: calc(35pt - 160%);
+    }
+    
+    .presentation p{
+        font-size: calc(26pt - 110%);
+    }
+
+    .texts {
+        padding-bottom: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    .presentation{
+        display: block;
+        height: calc(636px - 40%);
+    }
+
+    .presentation img {
+        width:calc(692px - 150%);
+        height:calc(582px - 70%);
+    }
+
+    .presentation h1 {
+        font-size: calc(50pt - 230%);
+    }
+    .presentation h2 {
+        font-size: calc(35pt - 160%);
+    }
+    
+    .presentation p{
+        font-size: calc(26pt - 110%);
+    }
+
+    .texts {
+        padding-bottom: 3rem;
+    }
+    
 }
