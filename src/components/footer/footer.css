@@ -1,7 +1,6 @@
 .footer{
-    position: absolute;
-    width: 111.2812rem;
-    bottom: 0;
+    position: relative;
+    margin-top: -1vw;
     padding: 1rem;
     border-radius: 1rem 1rem 0rem 0rem;
     background-color: var(--backgroud-color2-blue);
