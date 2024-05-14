@@ -1,7 +1,4 @@
 .header {
-    position: fixed;
-    margin: 0;
-    width: 111.3rem;
     align-items: center;
     display: flex;
     justify-content: space-between;

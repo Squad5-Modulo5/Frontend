@@ -1,13 +1,9 @@
-import "./home.css"
-import Footer from "../../components/footer/footer"
 import Header from "../../components/header/header"
-import Presentation from "../../components/presentation/presentation"
-
+import Footer from "../../components/footer/footer"
 export default function Home (){
     return(
         <div>
             <Header/>
-            <Presentation/>
             <section></section>
             <section></section>
             <section></section>
