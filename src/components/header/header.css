@@ -1,7 +1,6 @@
 .header {
-    position: fixed;
-    margin: 0;
-    width: 111.3rem;
+    position: relative;
+    margin-bottom: -1vw;
     align-items: center;
     display: flex;
     justify-content: space-between;
