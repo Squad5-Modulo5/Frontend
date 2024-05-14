@@ -10,9 +10,5 @@ import SectionD from './components/sections/sectionD.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Home/>
-    <SectionA/>
-    <SectionC/>
-    <SectionB/>
-    <SectionD/>
   </React.StrictMode>,
 )
