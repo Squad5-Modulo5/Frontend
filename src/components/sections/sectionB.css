@@ -1,0 +1,57 @@
+#background {
+    background-color: var(--backgroud-color-blue);
+}
+
+#sectionB {
+    margin-top: 0%;
+    background-color: var(--backgroud-color-blue);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+#arrow {
+    background-color: var(--primary-color-primary);
+    height: auto;    
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.title {
+    text-align: center;
+    color: var(--primary-color-yellow);
+    font-family: "Silkscreen";
+    font-size: 35px;
+}
+
+.texts {
+    margin-top: 20px;
+}
+
+.paragraph{
+    color: var(--off-white);
+    font-size: 30px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: -500px;
+    text-align: left;
+    font-family: "Josefin_Slab";
+}
+
+.paragraph2{
+    color: var(--off-white);
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+#eletric-pokemon-4{
+    width: 900px;
+    height: 900px;
+    margin-top: 0px;
+    margin-left: 58%;
+}
+
+.image{
+    margin-top: -780px;
+}
