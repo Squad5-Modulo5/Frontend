@@ -1,5 +1,5 @@
 import './presentation.css'
-import eletricPokemon from "../../assets/pokemons/eletric_pokemon (1).png"
+import eletricPokemon from "../../assets/pokemons/eletric_pokemon_1.png"
 
 export default function Presentation () {
     return(

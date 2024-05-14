@@ -1,5 +1,5 @@
 import './sectionA.css'
-import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (2).png"
+import eletric_pokemon from "../../assets/pokemons/eletric_pokemon_2.png"
 
 
 function SectionA(props) {
