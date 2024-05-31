@@ -1,16 +1,20 @@
+/* eslint-disable react/prop-types */
 import ecoelektLogo from "../../assets/logo/ecoelekt.logo.svg"
-import Button from "../button/button.jsx"
+import {Link, Outlet} from "react-router-dom";
+import Button from "../button/button.jsx";
 import "./header.css"
 
-export default function Header (){
+export default function Header ({home}){
     return(
         <div className="header">
             <img id= "header-logo" src={ecoelektLogo} alt="ecoelekt-logo" />
             <ul className="header-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Calculator</a></li>
+                <li><Link to={`/`}>{home}</Link></li>
+                <li><Link to={`/Calculate`}>Cauculadora</Link></li>
+            
             </ul>
-            <Button name={"Login"}/>
+            <Button link={`/login`} name={"Login"}/>
+            <Outlet/>
         </div>
     )
 }
