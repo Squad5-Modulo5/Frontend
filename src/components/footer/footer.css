@@ -1,6 +1,11 @@
-.footer{
-    position: absolute;
-    width: 111.2812rem;
+.background1{
+    background-color: var( --backgroud-color-blue);
+}
+
+
+ .footer{
+    width: 97.5%;
+    /* height: 100px; */
     bottom: 0;
     padding: 1rem;
     border-radius: 1rem 1rem 0rem 0rem;
@@ -9,6 +14,6 @@
     justify-content: center;
 }
 
-img {
+#simb {
     height: 2rem;
-}
+} 

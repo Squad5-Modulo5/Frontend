@@ -40,18 +40,14 @@ p{
 .paragraph{
     color: black;
     font-family: "Josefin_Slab";
+    
 }
 
-#paragraph2{
-    margin-left: -650px;
-}
 
 #pokemon-sectionC{
     width:620px;
     height: 800px;
-    margin-top: -530px;
+    margin-top: -520px;
     margin-left: 0px;
-
-   
 }
 

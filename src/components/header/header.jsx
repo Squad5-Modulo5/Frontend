@@ -10,7 +10,7 @@ export default function Header ({home}){
             <img id= "header-logo" src={ecoelektLogo} alt="ecoelekt-logo" />
             <ul className="header-links">
                 <li><Link to={`/`}>{home}</Link></li>
-                <li><Link to={`/Calculate`}>Cauculadora</Link></li>
+                <li><Link to={`/Calculate`}>Calculator</Link></li>
             
             </ul>
             <Button link={`/login`} name={"Login"}/>
