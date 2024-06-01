@@ -20,7 +20,7 @@
     margin: 0;
     display: flex;
     font-family: "Silkscreen";
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style-type: none;
 }
 
