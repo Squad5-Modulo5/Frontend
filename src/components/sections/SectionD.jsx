@@ -92,13 +92,6 @@ function SectionD(props) {
              </div>
          </div>
 
-
-
-
-
-
-
-
         </>
 );}
 
