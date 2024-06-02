@@ -3,8 +3,8 @@ import { AxiosError } from "axios";
 import { useState } from "react";
 import blogFetch from "../../axios/config";
 import { useForm } from "react-hook-form";
-import Button from "../../components/button/button";
 import React from "react";
+
 
 function Login() {
   const { register, handleSubmit } = useForm();
@@ -29,7 +29,7 @@ function Login() {
 
   return (
     <div className="logo-login">
-      <h1>logo</h1>
+   
       <div className="space-login">
         <form className="" onSubmit={handleSubmit(onSubmit)}>
           <h2>FAZER LOGIN</h2>
@@ -66,7 +66,7 @@ function Login() {
           </div>
           {error && <p className="error">{error}</p>}
           <div>
-            <Button link={`/private`} name={"Login"} />
+          <button>LONGIN</button>
           </div>
         </form>
       </div>
