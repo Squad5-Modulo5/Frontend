@@ -3,7 +3,7 @@
 }
 
 #sectionD{
-    height: 120%;
+    height: 750px;
     margin-top: 0%;
     background-color: var( --backgroud-color-blue);
     border-top-left-radius: 15px;
@@ -29,4 +29,18 @@
     font-family: "Josefin_Slab";
     margin-left: 90px;
     margin-right: 100px;
+    margin-top: 30px;
+}
+
+#calculator2{
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 17px;
+}
+
+#eletric-pokemon-5{
+    width: 750px;
+    height: 600px;
+    margin-left: 609px;
+    margin-top: -490px;
 }

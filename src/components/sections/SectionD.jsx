@@ -1,4 +1,5 @@
 import './sectionD.css'
+import eletric_pokemon from "../../assets/pokemons/eletric_pokemon_(5).png"
 
 
 
@@ -81,10 +82,10 @@ function SectionD(props) {
                     pode economizar <br></br> dinheiro. Use nossa calculadora de consumo de <br></br> energia gratuita para obter uma 
                     análise <br></br> personalizada do uso de energia da sua casa. <br></br> Basta inserir algumas informações básicas e nós
                     <br></br> faremos o resto. Com essas informações valiosas, <br></br> você pode tomar decisões informadas e <br></br>
-                    implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro. <br></br></p>
+                    implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro.</p>
                     <p className='prg2'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo!</p> 
-                    <button id='calculator'>{props.calculator}CALCULADORA</button>
-                    {/* <img id='eletric-pokemon-5' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img>  */}
+                    <button id='calculator2'>{props.calculator}CALCULADORA</button>
+                    <img id='eletric-pokemon-5' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img> 
             </div>
 
 
