@@ -4,9 +4,10 @@ import Home from "../views/home/home";
 import "./index.css"
 import Login from "../views/login";
 import Private from "../views/private";
-import CalculateProduct from "../views/calculate";
+
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import SectionCalculate from "../components/sections/sectionCalculate.jsx";
 const RoutesApp = createBrowserRouter([{
 
     children:[
@@ -24,7 +25,7 @@ const RoutesApp = createBrowserRouter([{
         },
         {
             path: "/Calculate",
-            element: <CalculateProduct/>,
+            element:<SectionCalculate/>
         }
 
 

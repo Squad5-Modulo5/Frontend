@@ -9,7 +9,9 @@
 }
 
 .logo-login {
+
   display: flex;
+  flex-direction: column; /* Adicionado para alinhar em coluna */
   align-items: center;
   justify-content: center;
   background-color: #003478;
@@ -19,6 +21,11 @@
   gap: 0px;
   border-radius: 53px;
   opacity: 1;
+  margin-top: 10%;
+}
+#ecoelekt-logo{
+
+  margin-bottom: 20px;
 }
 
 .space-login {
@@ -55,18 +62,18 @@
 }
 
 .result ul {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .result li {
   font-size: medium;
   color: #ffffff;
-  padding: 5px 0; 
+  padding: 5px 0;
 }
 
-form {
+.space-login form {
   position: relative;
   padding: 20px;
   display: flex;
@@ -79,18 +86,18 @@ form {
   margin: 0 auto;
 }
 
-input {
+.space-login input {
   width: 100%;
-  max-width: 300px;
-  height: 33px;
-  margin-bottom: 10px;
+
+  height: 50px;
+  margin-bottom: 30px;
   border-radius: 20px;
   border: none;
   padding: 5px 10px;
   background-color: #BABABA;
 }
 
-label {
+.space-login label {
   color: #0055C4;
   display: block;
   margin-bottom: 5px;
@@ -98,11 +105,12 @@ label {
   padding: 0;
 }
 
-button {
+.space-login button {
   padding: 0.4rem 1rem;
+  width: 100%;
   border-radius: 0.7rem;
   border: 1px solid transparent;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 1000;
   font-family: inherit;
   background-color: var(--secondary-color-yellow);
@@ -111,7 +119,7 @@ button {
   transition: background-color 0.25s, color 0.25s;
   font-family: "Silkscreen";
 }
-button:hover {
+.space-login button:hover {
   color: var(--off-white);
   background-color: var(--backgroud-color-green);
 }
