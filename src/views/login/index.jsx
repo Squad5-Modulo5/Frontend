@@ -28,50 +28,62 @@ function Login() {
   };
 
   return (
-    <div className="logo-login">
-      <h1>logo</h1>
-      <div className="space-login">
-        <form className="" onSubmit={handleSubmit(onSubmit)}>
-          <h2>FAZER LOGIN</h2>
-          <input type="hidden" name="remember" defaultValue="true" />
-          <div className="">
-            <label htmlFor="email-address" className="">
-              EMAIL
-            </label>
-            <input
-              {...register('email')}
-              id="email-address"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className=""
-              placeholder="Email address"
-            />
+    <>
+      <div className="background34">
+        <div className="logo-login">
+          <div id="logo1">
+            <h1 className="logo">Eco</h1>
+            <h1 className="logo-continuation">elekt</h1>
           </div>
-          <div>
-            <label htmlFor="password" className="">
-              SENHA
-            </label>
-            <input
-              {...register('password')}
-              id="password"
-              name="password"
-              type="password"
-              autoComplete="current-password"
-              required
-              className=""
-              placeholder="Password"
-            />
+          <div className="space-login">
+            <form className="form" onSubmit={handleSubmit(onSubmit)}>
+              <h2>FAZER LOGIN</h2>
+              <input type="hidden" name="remember" defaultValue="true" className="input" />
+              <div className="">
+                <label htmlFor="email-address" className="label">
+                  EMAIL
+                </label>
+                <input
+                  {...register('email')}
+                  id="email-address"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  className="input"
+                  placeholder="Email address"
+                  
+                />
+              </div>
+              <label htmlFor="password" className="label">
+                  SENHA
+              </label>
+
+              <div>
+                <input
+                  {...register('password')}
+                  id="password"
+                  name="password"
+                  type="password"
+                  autoComplete="current-password"
+                  required
+                  className="input"
+                  placeholder="Password"
+                /> 
+              </div>
+              {error && <p className="error">{error}</p>}
+              <div className="button">
+                <Button link={`/private`} name={"Login"} className={'button'} />
+              </div>
+            </form>
           </div>
-          {error && <p className="error">{error}</p>}
-          <div>
-            <Button link={`/private`} name={"Login"} />
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-}
+        </div>
+      </div> 
+      
+    </>
+    );
+  }
+
+
 
 export default Login;
