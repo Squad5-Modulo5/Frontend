@@ -1,10 +1,12 @@
 #background{
     background-color: var(--backgroud-color-blue);
+    width: 100%;
 }
 
 
 
 #sectionC{
+    width: 100%;
     margin-top: 0%;
     background-color: var(--primary-color-primary);
     border-top-left-radius: 15px;

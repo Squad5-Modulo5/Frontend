@@ -5,9 +5,9 @@ import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (2).png"
 function SectionA(props) {
 
     return (
-    <>
+
       
-    <div id="background">
+    <section id="background">
 
       <div id='sectionA'>
         <div id="arrow" >
@@ -39,8 +39,7 @@ function SectionA(props) {
         
 
       </div>
-    </div> 
-    </>
+    </section>
     );
   }
   

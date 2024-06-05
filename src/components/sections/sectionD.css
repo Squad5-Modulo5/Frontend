@@ -1,8 +1,10 @@
 #found-color{
+    width: 100%;
     background-color: var(--primary-color-primary);
 }
 
 #sectionD{
+    width: 100%;
     height: 750px;
     margin-top: 0%;
     background-color: var( --backgroud-color-blue);

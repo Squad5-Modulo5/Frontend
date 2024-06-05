@@ -30,7 +30,7 @@ function Login() {
 
   return (
       <div className="logo-login">
-        <img id="ecoelekt-logo" src={ecoelektLogo} alt="ecoelekt-logo"/>
+        <img id="ecoelekt-logo-login" src={ecoelektLogo} alt="ecoelekt-logo"/>
         <div className="space-login">
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <h2>FAZER LOGIN</h2>

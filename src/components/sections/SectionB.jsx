@@ -5,8 +5,8 @@ import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (4).png"
 function SectionB(props) {
 
     return (
-        <>
-    <div id='background2'>
+
+    <section id='background2'>
       <div id="sectionB">
                 <br></br>
                 <img id="arrow-white" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACQCAYAAAD9egI2AAAAAXNSR0IA
@@ -102,10 +102,9 @@ function SectionB(props) {
            </div>
       </div>
 
-      </div> 
+      </section>
 
 
-        </>
 );}
 
 

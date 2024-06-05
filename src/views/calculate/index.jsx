@@ -33,7 +33,7 @@ function CalculateProduct() {
 
   return (
       <div className="logo-calculete">
-        <img id="ecoelekt-logo" src={ecoelektLogo} alt="ecoelekt-logo"/>
+        <img id="ecoelekt-logo-calculate" src={ecoelektLogo} alt="ecoelekt-logo"/>
         <div className="space-calculate">
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <h2>CALCULAR Kwh/h</h2>

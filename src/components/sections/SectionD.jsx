@@ -6,8 +6,8 @@ import eletric_pokemon from "../../assets/pokemons/eletric_pokemon_(5).png"
 function SectionD(props) {
 
     return (
-        <>
-         <div id="found-color">
+
+         <section id="found-color">
              <div id="sectionD">
                 <br></br>
                 <img id="arrow-white" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACQCAYAAAD9egI2AAAAAXNSR0IA
@@ -90,9 +90,9 @@ function SectionD(props) {
 
 
              </div>
-         </div>
+         </section>
 
-        </>
+
 );}
 
 

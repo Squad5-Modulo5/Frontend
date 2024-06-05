@@ -23,8 +23,10 @@
   opacity: 1;
   margin-top: 10%;
 }
-#ecoelekt-logo{
-
+#ecoelekt-logo-login{
+  border: 1px solid red;
+  width: 70%;
+  margin: 20px;
   margin-bottom: 20px;
 }
 

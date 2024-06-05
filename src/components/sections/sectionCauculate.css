@@ -8,26 +8,24 @@
     --off-white: #F0F0F0;
 }
 
-#background {
-    background-color: var(--background-color-blue);
-    padding: 20px;
-}
 
-#sectionC {
+
+#sectionCalculate{
+
+    margin-top: 0%;
     background-color: var(--primary-color-primary);
-    border-radius: 15px 15px 0 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1000px;
-    text-align: center;
+
 }
 
-#arrow {
+
+#arrowCalculate {
     margin: 20px auto;
 }
 
-.title {
+.titleCalculate {
     text-align: center;
     color: var(--terciary-color-green);
     font-family: "Silkscreen", sans-serif;
@@ -35,7 +33,7 @@
     margin-bottom: 20px;
 }
 
-p {
+.paragraphCalculate {
     width: 80%;
     margin: 20px auto;
     text-align: left;
@@ -45,20 +43,5 @@ p {
     font-family: "Josefin Slab", serif;
 }
 
-#pokemon-sectionC {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-}
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
 
-li {
-    margin: 10px 0;
-}
