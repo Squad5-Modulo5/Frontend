@@ -3,8 +3,9 @@ import { AxiosError } from "axios";
 import { useState } from "react";
 import blogFetch from "../../axios/config";
 import { useForm } from "react-hook-form";
-import Button from "../../components/button/button";
 import React from "react";
+import ecoelektLogo from "../../assets/logo/ecoelekt.logo.svg";
+
 
 function Login() {
   const { register, handleSubmit } = useForm();
@@ -28,62 +29,50 @@ function Login() {
   };
 
   return (
-    <>
-      <div className="background34">
-        <div className="logo-login">
-          <div id="logo1">
-            <h1 className="logo">Eco</h1>
-            <h1 className="logo-continuation">elekt</h1>
-          </div>
-          <div className="space-login">
-            <form className="form" onSubmit={handleSubmit(onSubmit)}>
-              <h2>FAZER LOGIN</h2>
-              <input type="hidden" name="remember" defaultValue="true" className="input" />
-              <div className="">
-                <label htmlFor="email-address" className="label">
-                  EMAIL
-                </label>
-                <input
+      <div className="logo-login">
+        <img id="ecoelekt-logo" src={ecoelektLogo} alt="ecoelekt-logo"/>
+        <div className="space-login">
+          <form className="" onSubmit={handleSubmit(onSubmit)}>
+            <h2>FAZER LOGIN</h2>
+            <input type="hidden" name="remember" defaultValue="true"/>
+            <div className="">
+              <label htmlFor="email-address" className="">
+                EMAIL
+              </label>
+              <input
                   {...register('email')}
                   id="email-address"
                   name="email"
                   type="email"
                   autoComplete="email"
                   required
-                  className="input"
+                  className=""
                   placeholder="Email address"
-                  
-                />
-              </div>
-              <label htmlFor="password" className="label">
-                  SENHA
+              />
+            </div>
+            <div>
+              <label htmlFor="password" className="">
+                SENHA
               </label>
-
-              <div>
-                <input
+              <input
                   {...register('password')}
                   id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="input"
+                  className=""
                   placeholder="Password"
-                /> 
-              </div>
-              {error && <p className="error">{error}</p>}
-              <div className="button">
-                <Button link={`/private`} name={"Login"} className={'button'} />
-              </div>
-            </form>
-          </div>
+              />
+            </div>
+            {error && <p className="error">{error}</p>}
+            <div>
+              <button>LONGIN</button>
+            </div>
+          </form>
         </div>
-      </div> 
-      
-    </>
-    );
-  }
-
-
+      </div>
+  );
+}
 
 export default Login;
