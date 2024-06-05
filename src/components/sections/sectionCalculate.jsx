@@ -1,7 +1,7 @@
 import "./sectionCauculate.css"
-import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (2).png";
 import CalculateProduct from "../../views/calculate/index.jsx";
-import Header from "../header/header.jsx";
+
+
 
 
 function SectionCalculate(props) {
@@ -17,21 +17,23 @@ function SectionCalculate(props) {
                 <h1 className='title'>
                     {props.title}
                     <br/>
-                    Boas práticas para reduzir o consumo de energia
+                    Calculadora: Sempre é Bom Ter o Controle
                 </h1>
                 <p className='paragraph'>
                     {props.text}
-                    Você sabia que pequenas mudanças nos hábitos diários podem fazer uma grande
-                    diferença no consumo de energia da sua casa? Adotar práticas sustentáveis é
-                    essencial para economizar na conta de luz e contribuir para um futuro mais sustentável.
-                    Neste tópico, você aprenderá dicas valiosas para reduzir o consumo de energia, como:
+                    A nossa calculadora ou medidora de consumo de energia foi desenvolvida para proporcionar um controle preciso do consumo de energia de eletrodomésticos ou periféricos, permitindo que os usuários determinem quantos kWh estão sendo utilizados. Nos campos disponíveis, os usuários devem inserir as seguintes informações:
+
+Medidas: Indique a unidade de medida desejada, por exemplo, 'kWh' (quilowatts-hora).<br></br>
+Potência: Informe a potência do produto em watts.<br></br>
+Duração: Especifique por quanto tempo o aparelho é utilizado diariamente.<br></br>
+Dias: Defina por quantos dias o aparelho será utilizado.<br></br>
+
                 </p>
 
                     <CalculateProduct/>
 
                 <p className='paragraph'>
-                    Seguindo essas práticas, você não apenas economizará dinheiro, mas também ajudará a
-                    preservar o meio ambiente. Vamos começar a jornada para um futuro mais sustentável e econômico!
+                    Brasil, a regulamentação que exige que os produtos informem sua potência é estabelecida pelo Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO). Essa exigência faz parte das regulamentações de eficiência energética, que visam garantir que os consumidores tenham acesso a informações precisas sobre o consumo de energia dos produtos que estão adquirindo
                 </p>
              <div>
 
