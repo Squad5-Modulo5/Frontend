@@ -4,9 +4,7 @@ import eletric_pokemon from "../../assets/pokemons/eletric_pokemon_03.png"
 function SectionC(props) {
 
     return (
-    <>
-      
-    <div id="background">
+    <section id="background">
 
       <div id='sectionC'>
         <div id="arrow" >
@@ -27,24 +25,21 @@ function SectionC(props) {
          simples para tornar sua casa mais eficiente em<br></br> termos de energia. Vamos começar a economizar<br></br> energia e reduzir
           nossa pegada de carbono<br></br> juntos!
           <br></br>
+          <br></br>
+          • Identifique os aparelhos que consomem mais<br></br> energia<br></br>
+          • Leia as etiquetas de eficiência energética<br></br>
+          • Use um medidor de energia
+      
 
-          <div id='paragraph2'>
-            <p>
-              • Identifique os aparelhos que consomem mais<br></br> energia<br></br>
-              • Leia as etiquetas de eficiência energética<br></br>
-              • Use um medidor de energia
-          </p>
-          </div>
-          
         </p>
 
         <img id="pokemon-sectionC" src={eletric_pokemon} alt='pokemon-eletric3'>{props.pokemon}</img>
 
         </div> 
     
-      </div>
+      </section>
     
-    </>
+
     );
   }
   

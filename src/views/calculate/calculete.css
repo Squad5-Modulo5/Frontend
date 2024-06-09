@@ -23,13 +23,17 @@
     opacity: 1;
 
 }
-#ecoelekt-logo{
+#ecoelekt-logo-calculate{
 
+    width: 70%;
+    margin: 20px;
     margin-bottom: 20px;
+    margin-left: 15%;
+
 }
 
 .space-calculate{
-   border: 1px solid  #003478;;
+    border: 1px solid #003478;
     width: 500px;
     height: 429px;
     margin: 0 auto -60px auto;
@@ -38,6 +42,8 @@
     opacity: 1;
     background-color: #D9D9D9;
     padding: 20px;
+
+
 }
 
 .space-calculate h2 {

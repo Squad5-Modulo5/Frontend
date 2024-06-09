@@ -5,9 +5,9 @@ import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (2).png"
 function SectionA(props) {
 
     return (
-    <>
+
       
-    <div id="background">
+    <section id="background">
 
       <div id='sectionA'>
         <div id="arrow" >
@@ -27,7 +27,7 @@ function SectionA(props) {
         aprenderá dicas valiosas para<br></br> reduzir o consumo de energia, como:<br></br>
           • Desligar aparelhos eletrônicos quando<br></br> não estiverem em uso<br></br>
           • Usar lâmpadas LED<br></br>
-          • timizar o uso de ar-condicionado e aquecedores<br></br>
+          • Otimizar o uso de ar-condicionado e aquecedores<br></br>
           • Isolar termicamente sua casa<br></br>
           • Usar eletrodomésticos eficientes <br></br>
 
@@ -39,8 +39,7 @@ function SectionA(props) {
         
 
       </div>
-    </div> 
-    </>
+    </section>
     );
   }
   

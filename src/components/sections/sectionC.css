@@ -1,10 +1,12 @@
 #background{
     background-color: var(--backgroud-color-blue);
+    width: 100%;
 }
 
 
 
 #sectionC{
+    width: 100%;
     margin-top: 0%;
     background-color: var(--primary-color-primary);
     border-top-left-radius: 15px;
@@ -15,21 +17,21 @@
 
 #arrow{
     background-color: var(--primary-color-primary);
-    margin-left: 50%;
+    margin-left: 50%;    
     margin-right: 50%;
 
 }
 
 .title{
-
+    
     text-align: center;
     color: var(--terciary-color-green);
     font-family: "Silkscreen";
     font-size: 35px;
-
+    
 }
 
-.title p{
+p{
     width: 65%;
     margin-top: 50px;
     margin-left: 47%;
@@ -37,21 +39,17 @@
     text-align: left;
     font-size: 30px;
 }
-.title .paragraph{
+.paragraph{
     color: black;
     font-family: "Josefin_Slab";
+    
 }
 
-#paragraph2{
-    margin-left: -650px;
-}
 
 #pokemon-sectionC{
     width:620px;
     height: 800px;
-    margin-top: -530px;
+    margin-top: -520px;
     margin-left: 0px;
-
-
 }
 
