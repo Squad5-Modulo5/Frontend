@@ -1,5 +1,6 @@
 
 import useAuthUser from 'react-auth-kit/hooks/useAuthUser';
+import Home from "../home/home.jsx";
 
 const Private = () => {
     const auth = useAuthUser()
@@ -7,6 +8,7 @@ const Private = () => {
     return(
         <div>
             Hello {auth.user}
+            <Home/>
         </div>
     )
 }
