@@ -1,9 +1,14 @@
 
+import useAuthUser from 'react-auth-kit/hooks/useAuthUser';
 
-export default function Private (){
+const Private = () => {
+    const auth = useAuthUser()
+
     return(
         <div>
-         <h1>aaaaaa</h1>  
+            Hello {auth.user}
         </div>
     )
 }
+export default  Private 
+    

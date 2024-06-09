@@ -5,7 +5,7 @@ import axios from "axios";
  // const { 'nextauth.token': token } = parseCookies(ctx)
 
   const blogFetch = axios.create({
-    baseURL: 'https://ecoelektbackend.onrender.com',
+    baseURL: 'http://localhost:4979',
     headers:{
         "Content-type":"application/json"
     }
