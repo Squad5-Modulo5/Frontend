@@ -1,16 +1,45 @@
+import useAuthHeader from 'react-auth-kit/hooks/useAuthHeader'
+import blogFetch from '../../axios/config';
+import { useEffect, useState } from 'react';
+import ProductForm from '../../components/electricalProduct/formProduct';
 
-import useAuthUser from 'react-auth-kit/hooks/useAuthUser';
-import Home from "../home/home.jsx";
+const Pivate= () => {
+ const [profile, setProfile] = useState(null);
+ const authHeader = useAuthHeader();
+ const headers = {
+   'Authorization': authHeader
+ }
 
-const Private = () => {
-    const auth = useAuthUser()
+ const getUser= async () => {
+     try {
 
-    return(
+         const responseUser = await blogFetch({
+             method: 'get',
+             url: "/user/profile",
+             responseType: 'json',
+             headers
+
+         });
+         console.log(responseUser.data.profile)
+         setProfile(responseUser.data.profile);
+     } catch (error) {
+         console.log(error);
+     }
+ }
+
+ useEffect(() => {
+     getUser();
+ }, []);
+ return (
+    <div>
+      <h1>User Profile</h1>
+      {profile && (
         <div>
-            Hello {auth.user}
-            <Home/>
+          <p>Name: {profile.name}</p>
+          <p>Email: {profile.email}</p>
+          <ProductForm userId={profile.id}/>
         </div>
-    )
+      )}
+    </div>)
 }
-export default  Private 
-    
+export default Pivate

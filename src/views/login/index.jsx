@@ -25,12 +25,11 @@ function Login() {
       const result = signIn({
         auth: {
             token: response.data.token,
-            type: "x-acess-token"
+            type: "x-access-token"
         },
         userState: {
             name: response.data.name,
-            uid: response.data.id,
-            numberOfIdeas:response.ideasNumber
+            uid: response.data.id
         }
     })
       if (result) {
