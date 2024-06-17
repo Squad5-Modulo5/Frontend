@@ -12,7 +12,7 @@ import SectionD from "../../components/sections/SectionD.jsx";
 export default function Home (){
     return(
         <>
-            <Header home={"Home"} />
+            <Header link1={`/`} link2={`/calculate`} home={"Home"} calculate={"Cauculadora"}/>
             <Presentation/>
             <SectionA/>
             <SectionB/>

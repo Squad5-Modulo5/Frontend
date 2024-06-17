@@ -9,6 +9,7 @@ import React from "react";
 import SectionCalculate from "../components/sections/sectionCalculate.jsx";
 
 import AuthOutlet from "@auth-kit/react-router/AuthOutlet";
+import Regiteruser from "../views/register/index.jsx";
 
 const RoutesApp = () => {
   return (
@@ -16,6 +17,7 @@ const RoutesApp = () => {
     <Routes>
       <Route path={'/'} element={<Home/>}/>
       <Route path={'/calculate' } element={<SectionCalculate/>}/>
+      <Route path={'/register'} element={<Regiteruser/>}/>
       <Route path={'/login' } element={<Login/>}/>
       <Route element={<AuthOutlet fallbackPath='/login' />}>
     

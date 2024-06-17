@@ -2,6 +2,7 @@ import useAuthHeader from 'react-auth-kit/hooks/useAuthHeader'
 import blogFetch from '../../axios/config';
 import { useEffect, useState } from 'react';
 import ProductForm from '../../components/electricalProduct/formProduct';
+import Header from '../../components/header/header';
 
 const Pivate= () => {
  const [profile, setProfile] = useState(null);
@@ -32,11 +33,10 @@ const Pivate= () => {
  }, []);
  return (
     <div>
-      <h1>User Profile</h1>
+  
       {profile && (
         <div>
-          <p>Name: {profile.name}</p>
-          <p>Email: {profile.email}</p>
+          <Header link1={`#`} link2={`#`} home={profile.name}/>
           <ProductForm userId={profile.id}/>
         </div>
       )}

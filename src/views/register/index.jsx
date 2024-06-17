@@ -1,60 +1,55 @@
-import "./longin.css";
+
 import { AxiosError } from "axios";
 import { useState } from "react";
-import blogFetch from "../../axios/config";
 import { useForm } from "react-hook-form";
+import React from "react";
+import blogFetch from "../../axios/config";
 import ecoelektLogo from "../../assets/logo/ecoelekt.logo.svg";
-import { Link, useNavigate } from "react-router-dom";
-import useSignIn from "react-auth-kit/hooks/useSignIn";
 
-function Login() {
-  const navigate = useNavigate();
+function Regiteruser() {
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
-  const signIn = useSignIn();
+
 
   const onSubmit = async (values) => {
     console.log("Values: ", values);
     setError("");
+ 
 
     try {
-      const response = await blogFetch.post("/user/login", values);
-      console.log("Response: ", response.data.message);
-      
-      // Save token using react-auth-kit's signIn function
-      const result = signIn({
-        auth: {
-            token: response.data.token,
-            type: "x-access-token"
-        },
-        userState: {
-            name: response.data.name,
-            uid: response.data.id
-        }
-    })
-      if (result) {
-        alert(response.data.message);
-        navigate("/private");
-      } else {
-        setError("Failed to sign in");
-      }
+      const response = await blogFetch.post("user/register", values);
+      console.log("Response: ", response);
+      alert(response.data.message)
     } catch (err) {
       if (err instanceof AxiosError) {
-        setError(err.response?.data.message);
+        setError(err.response?.data.message || "An error occurred");
       } else if (err instanceof Error) {
         setError(err.message);
       }
       console.log("Error: ", err);
     }
   };
-
   return (
     <div className="logo-login">
       <img id="ecoelekt-logo-login" src={ecoelektLogo} alt="ecoelekt-logo" />
       <div className="space-login">
         <form className="" onSubmit={handleSubmit(onSubmit)}>
-          <h2>FAZER LOGIN</h2>
+          <h2>REGISTRAR-SE</h2>
           <input type="hidden" name="remember" defaultValue="true" />
+          <div>
+              <label htmlFor="name" className="">
+                NOME
+              </label>
+              <input
+                  {...register('name')}
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                   placeholder="usuario123"
+                  className=""  
+              />
+            </div>
           <div className="">
             <label htmlFor="email-address" className="">
               EMAIL
@@ -67,7 +62,7 @@ function Login() {
               autoComplete="email"
               required
               className=""
-              placeholder="Email address"
+              placeholder="usuario@gmail.com"
             />
           </div>
           <div>
@@ -87,13 +82,12 @@ function Login() {
           </div>
           {error && <p className="error">{error}</p>}
           <div>
-            <button>LOGIN</button>
+            <button>Registrar</button>
           </div>
-          <h2>não se regristou ainda <Link to={`/register`}>Registre-se</Link></h2>
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Regiteruser;

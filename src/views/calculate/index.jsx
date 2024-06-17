@@ -7,7 +7,7 @@ import blogFetch from "../../axios/config";
 import {Link} from "react-router-dom";
 import ecoelektLogo from "../../assets/logo/ecoelekt.logo.svg";
 
-function CalculateProduct() {
+function CalculateProduct({idproduct}) {
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
@@ -18,7 +18,7 @@ function CalculateProduct() {
     setResult(null);
 
     try {
-      const response = await blogFetch.post("/consumpition/createconsumpition", values);
+      const response = await blogFetch.post(`/consumpition/createconsumpition/${idproduct}`, values);
       console.log("Response: ", response);
       setResult(response?.data.newConsumption);
     } catch (err) {
@@ -51,7 +51,7 @@ function CalculateProduct() {
                   min="0"
                   required
                   className=""
-                  placeholder="Number"
+                 
               />
             </div>
             <div>
