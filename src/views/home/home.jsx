@@ -12,13 +12,16 @@ import SectionD from "../../components/sections/SectionD.jsx";
 export default function Home (){
     return(
         <>
-            <Header link1={`/`} link2={`/calculate`} home={"Home"} calculate={"Cauculadora"}/>
+            <Header link1={`/`} link2={`/calculate`} home={"Home"} calculate={"Cauculadora"} butonlink={`/login`} name={`login`}/>
+            <div className="sections">
             <Presentation/>
             <SectionA/>
             <SectionB/>
             <SectionC/>
             <SectionD/>
+            </div>
             <Footer/>
+
         </>
     )
 }

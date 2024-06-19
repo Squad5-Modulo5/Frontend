@@ -36,7 +36,7 @@ const Pivate= () => {
   
       {profile && (
         <div>
-          <Header link1={`#`} link2={`#`} home={profile.name}/>
+          <Header link1={`#`} link2={`#`} home={profile.name} butonlink={`/`} name={"logaut"}/>
           <ProductForm userId={profile.id}/>
         </div>
       )}

@@ -33,3 +33,18 @@
 .header-links li a:hover{
     color: var(--primary-color-yellow);
 }
+@media (max-width: 768px) {
+    .header {
+    font-size: x-small;
+    flex-wrap: wrap;
+    }
+
+    .header-links {
+        margin-top: 10px;
+    }
+
+    .button-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
