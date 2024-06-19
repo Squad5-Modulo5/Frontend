@@ -3,6 +3,7 @@
     /* height: 100px; */
     width: 100%;
 
+
 }
 
 section{
@@ -20,7 +21,7 @@ width: 100%;
 
 }
 
- #arrow { 
+ #arrow {
     background-color: var(--primary-color-primary);
     margin-left: 50%;
     margin-right: 50%;
@@ -66,7 +67,7 @@ p{
     }
 
     p {
-        border: 2px solid red;
+        
         font-size: 18px;
      
     }
