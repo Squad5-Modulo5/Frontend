@@ -1,5 +1,6 @@
 import './sectionD.css'
 import eletric_pokemon from "../../assets/pokemons/eletric_pokemon_(5).png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -84,7 +85,9 @@ function SectionD(props) {
                     <br></br> faremos o resto. Com essas informações valiosas, <br></br> você pode tomar decisões informadas e <br></br>
                     implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro.</p>
                     <p className='prg2'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo!</p> 
-                    <button id='calculator2'>{props.calculator}CALCULADORA</button>
+                    <button id='calculator2'>{props.calculator}<Link to={`/calculate`}>CALCULADORA</Link></button>
+                   
+                    
                     <img id='eletric-pokemon-5' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img> 
             </div>
 
