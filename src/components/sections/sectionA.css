@@ -56,4 +56,42 @@ p{
     margin-left: -110px;
     
 }
+@media screen and (max-width: 768px) {
+    #sectionA {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    p {
+        border: 2px solid red;
+        font-size: 18px;
+     
+    }
+    #pokemon-sectionA {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+}
+
+@media screen and (max-width: 425px) {
+    #sectionA {
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
 

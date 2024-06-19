@@ -7,7 +7,9 @@
 
 
 }
-#section1{
+.sections{
+  display:flex;
+  flex-direction: column;
 
 
 
