@@ -1,5 +1,6 @@
+import Calculatealone from "../../views/calculate/calculetealone";
 import "./sectionCauculate.css"
-import CalculateProduct from "../../views/calculate/index.jsx";
+
 
 
 
@@ -30,7 +31,7 @@ Dias: Defina por quantos dias o aparelho será utilizado.<br></br>
 
                 </p>
 
-                    <CalculateProduct/>
+               <Calculatealone/>
 
                 <p className='paragraphCalculate'>
                     Brasil, a regulamentação que exige que os produtos informem sua potência é estabelecida pelo Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO). Essa exigência faz parte das regulamentações de eficiência energética, que visam garantir que os consumidores tenham acesso a informações precisas sobre o consumo de energia dos produtos que estão adquirindo

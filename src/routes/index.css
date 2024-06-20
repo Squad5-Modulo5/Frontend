@@ -26,3 +26,11 @@ html, body {
   padding: 0;
   overflow-x: hidden; /* Esconde a barra de rolagem horizontal, se não for necessária */
 }
+
+@media (max-width: 768px) {
+  img {
+ 
+}
+
+ p{ font-size: smaller;}
+}
