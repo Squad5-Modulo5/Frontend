@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import React from "react";
 import blogFetch from "../../axios/config";
 import ecoelektLogo from "../../assets/logo/ecoelekt.logo.svg";
+import Message from "../../components/message/Message";
 
 function Regiteruser() {
   const { register, handleSubmit } = useForm();
@@ -19,14 +20,27 @@ function Regiteruser() {
     try {
       const response = await blogFetch.post("user/register", values);
       console.log("Response: ", response);
-      alert(response.data.message)
+     alert(response.data.message) 
+    
     } catch (err) {
       if (err instanceof AxiosError) {
-        setError(err.response?.data.message || "An error occurred");
-      } else if (err instanceof Error) {
-        setError(err.message);
+        let errResponse = JSON.parse(err.response.request.responseText);
+
+
+      if (errResponse.errors && errResponse.errors.length > 0) {
+   
+        errResponse.errors.forEach(error => {
+   
+        let mensagemDeErro = error.msg;
+        // @ts-ignore
+        setError( <Message value2={mensagemDeErro}/>) ;
+       
+       ;})}
+     } else if (err instanceof Error) {
+          setError(err.message);
       }
-      console.log("Error: ", err);
+       console.log("Error: ", err);
+     
     }
   };
   return (
@@ -80,11 +94,12 @@ function Regiteruser() {
               placeholder="Password"
             />
           </div>
-          {error && <p className="error">{error}</p>}
+         
           <div>
             <button>Registrar</button>
           </div>
         </form>
+        {error && <p className="error">{error}</p>}
       </div>
     </div>
   );

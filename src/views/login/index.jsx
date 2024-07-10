@@ -19,7 +19,7 @@ function Login() {
 
     try {
       const response = await blogFetch.post("/user/login", values);
-      console.log("Response: ", response.data.message);
+      console.log("Response: ", response.data.message );
       
       // Save token using react-auth-kit's signIn function
       const result = signIn({
