@@ -10,6 +10,9 @@ import SectionCalculate from "../components/sections/sectionCalculate.jsx";
 
 import AuthOutlet from "@auth-kit/react-router/AuthOutlet";
 import Regiteruser from "../views/register/index.jsx";
+import ListProducts from "../views/lists/Listsproducts.jsx";
+
+
 
 const RoutesApp = () => {
   return (
@@ -22,7 +25,10 @@ const RoutesApp = () => {
       <Route element={<AuthOutlet fallbackPath='/login' />}>
     
         <Route path='/private' element={<Private/>} />
+        
+      
       </Route>
+      <Route path='/listproduct' element={<ListProducts/>} />
     </Routes>
   </BrowserRouter>
   
