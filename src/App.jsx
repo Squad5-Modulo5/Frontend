@@ -9,12 +9,15 @@ const store = createStore({
 
 import AuthProvider from 'react-auth-kit/AuthProvider';
 import RoutesApp from './routes';
+import { UserProvider } from './context/user';
 
 
 const App = () => {
   return (
     <AuthProvider store={store}>
-    <RoutesApp/>
+          <UserProvider>
+            <RoutesApp/>
+            </UserProvider>
   </AuthProvider>
   )
 }

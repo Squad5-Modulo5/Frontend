@@ -1,45 +1,25 @@
-import useAuthHeader from 'react-auth-kit/hooks/useAuthHeader'
-import blogFetch from '../../axios/config';
-import { useEffect, useState } from 'react';
+import React, { useContext} from 'react';
 import ProductForm from '../../components/electricalProduct/formProduct';
 import Header from '../../components/header/header';
+import { UserContext } from '../../context/user';
 
-const Pivate= () => {
- const [profile, setProfile] = useState(null);
- const authHeader = useAuthHeader();
- const headers = {
-   'Authorization': authHeader
- }
+const Private = () => {
+  const { user} = useContext(UserContext);
 
- const getUser= async () => {
-     try {
 
-         const responseUser = await blogFetch({
-             method: 'get',
-             url: "/user/profile",
-             responseType: 'json',
-             headers
+  // Assuming profile should come from user object
+  const profile = user; // or user.profile or however your user data is structured
 
-         });
-         console.log(responseUser.data.profile)
-         setProfile(responseUser.data.profile);
-     } catch (error) {
-         console.log(error);
-     }
- }
-
- useEffect(() => {
-     getUser();
- }, []);
- return (
-    <div>
-  
+  return (
+    <>
       {profile && (
         <div>
-          <Header link1={`#`} link2={`#`} home={profile.name} butonlink={`/`} name={"logaut"}/>
-          <ProductForm userId={profile.id}/>
+          <Header link1={`#`} link2={`#`} home={profile.name} buttonLink={`/`} name={"logout"} />
+          <ProductForm userId={profile.id} />
         </div>
       )}
-    </div>)
-}
-export default Pivate
+    </>
+  );
+};
+
+export default Private;
