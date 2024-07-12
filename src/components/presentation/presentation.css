@@ -1,0 +1,51 @@
+.presentation{
+    margin: 0;
+    height: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroud-color-blue);
+}
+
+.texts {
+    /* background-color: red; */
+    margin-top: -130px;
+    margin-left: 0px;
+    margin-right:-300px;
+    height: 110px;
+}
+
+.presentation h1 {
+    font-family: "Silkscreen";
+    font-size: 35px;
+    color: var(--primary-color-yellow);
+}
+.presentation h2 {
+    font-family: "Silkscreen";
+    font-size: 25px;
+    color: var(--primary-color-green);
+}
+
+#text1, #text2{
+  
+    /* background-color: blue; */
+    font-family:'Josefin_slab';
+    font-size: 30px;
+    color: var(--off-white);
+    margin-left: 6px; 
+    height: 30px;
+    
+
+}
+
+#image {
+    /* background-color: black; */
+    position: relative;
+    margin-top: 52px;
+    margin-left: 90px;
+    margin-right: -66px;
+    z-index: 1;
+    width:522px;
+    height:423.13px;
+
+}

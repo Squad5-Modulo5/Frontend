@@ -1,0 +1,59 @@
+#background{
+    /* background-color: var(--backgroud-color-blue); */
+    /* height: 100px; */
+    width: 100%;
+
+}
+
+section{
+width: 100%;
+}
+
+#sectionA{
+    width: 100%;
+    margin-top: 0%;
+    background-color: var(--primary-color-primary);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+
+}
+
+ #arrow { 
+    background-color: var(--primary-color-primary);
+    margin-left: 50%;
+    margin-right: 50%;
+     margin: 20px auto;
+
+ } 
+
+.title{
+    
+    text-align: center;
+    color: var(--terciary-color-green);
+    font-family: "Silkscreen";
+    font-size: 35px;
+    
+}
+
+p{
+    width: 65%;
+    margin-top: 100px;
+    margin-left: 43%;
+    text-align: left;
+    font-size: 30px;
+}
+.paragraph{
+    color: black;
+    font-family: "Josefin_Slab";
+}
+
+#pokemon-sectionA{
+    width:600px;
+    height: 600px;
+    margin-top: -9000px;
+    margin-left: -110px;
+    
+}
+

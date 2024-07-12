@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom"
 import "./button.css"
 
-export default function Button (props) {
+
+// eslint-disable-next-line react/prop-types
+export default function Button ({link, name}) {
     return(
-        <button>{props.name}</button>
+        <>
+        <button><Link to={link}>{name}</Link></button>
+        </>
     )
 }

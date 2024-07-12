@@ -1,4 +1,4 @@
-@import './variables.css';
+@import '../variables.css';
 
 @font-face {
   font-family: "Josefin_Slab";
@@ -20,7 +20,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  padding: 0;
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Esconde a barra de rolagem horizontal, se não for necessária */
+}
+
+@media (max-width: 768px) {
+  img {
+ 
+}
+
+ p{ font-size: smaller;}
 }

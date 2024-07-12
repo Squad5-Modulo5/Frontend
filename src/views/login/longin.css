@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Silkscreen';
+  src: local('Silkscreen'), url('/public/fonts/Silkscreen/Silkscreen-Bold.ttf') format('woff');
+}
+
+* {
+  font-family: 'Silkscreen', sans-serif;
+  box-sizing: border-box;
+}
+
+.logo-login {
+
+  display: flex;
+  flex-direction: column; /* Adicionado para alinhar em coluna */
+  align-items: center;
+  justify-content: center;
+  background-color: #003478;
+  width: 500px;
+  height: 509px;
+  margin: 0 auto;
+  gap: 0px;
+  border-radius: 53px;
+  opacity: 1;
+  margin-top: 10%;
+}
+#ecoelekt-logo-login{
+
+  width: 70%;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.space-login {
+
+  width: 500px;
+  height: 429px;
+  margin: 0 auto -60px auto;
+  gap: 0px;
+  border-radius: 53px;
+  opacity: 1;
+  background-color: #D9D9D9;
+  padding: 20px;
+}
+
+.space-login h2 {
+  font-size: 20px;
+  color: #02592F;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.result {
+  position: absolute;
+  z-index: 10;
+  border: 1px solid var(--secondary-color-yellow);
+  width: 450px;
+  height: 450px;
+  margin-top: -10px;
+  gap: 0px;
+  border-radius: 53px;
+  opacity: 1;
+  background-color: var(--primary-color-blue);
+  padding: 20px;
+}
+
+.result ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result li {
+  font-size: medium;
+  color: #ffffff;
+  padding: 5px 0;
+}
+
+.space-login form {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.space-login input {
+  width: 100%;
+
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #BABABA;
+}
+
+.space-login label {
+  color: #0055C4;
+  display: block;
+  margin-bottom: 5px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.space-login button {
+  padding: 0.4rem 1rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 1000;
+  font-family: inherit;
+  background-color: var(--secondary-color-yellow);
+  cursor: pointer;
+  color: var(--backgroud-color-green);
+  transition: background-color 0.25s, color 0.25s;
+  font-family: "Silkscreen";
+}
+.space-login button:hover {
+  color: var(--off-white);
+  background-color: var(--backgroud-color-green);
+}

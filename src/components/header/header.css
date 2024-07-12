@@ -1,11 +1,16 @@
 .header {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 50px;
     align-items: center;
     display: flex;
     justify-content: space-between;
     background-color: var(--backgroud-color2-blue);
     padding: 1rem ;
-    border-radius: 0rem 0rem 1.5rem 1.5rem;
+    border-radius: 0rem 0rem 1.0rem 1.0rem;
     z-index: 100;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 #header-logo {
@@ -16,7 +21,7 @@
     margin: 0;
     display: flex;
     font-family: "Silkscreen";
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style-type: none;
 }
 
@@ -27,4 +32,19 @@
 }
 .header-links li a:hover{
     color: var(--primary-color-yellow);
+}
+@media (max-width: 768px) {
+    .header {
+    font-size: x-small;
+    flex-wrap: wrap;
+    }
+
+    .header-links {
+        margin-top: 10px;
+    }
+
+    .button-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }

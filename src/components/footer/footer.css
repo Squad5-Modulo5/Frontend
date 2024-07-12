@@ -1,4 +1,12 @@
-.footer{
+.background1{
+    background-color: var( --backgroud-color-blue);
+}
+
+
+ .footer{
+    width: 100%;
+    /* height: 100px; */
+    bottom: 0;
     padding: 1rem;
     border-radius: 1rem 1rem 0rem 0rem;
     background-color: var(--backgroud-color2-blue);
@@ -6,6 +14,6 @@
     justify-content: center;
 }
 
-img {
+#simb {
     height: 2rem;
-}
+} 

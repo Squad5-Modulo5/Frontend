@@ -1,0 +1,48 @@
+#found-color{
+    width: 100%;
+    background-color: var(--primary-color-primary);
+}
+
+#sectionD{
+    width: 100%;
+    height: 750px;
+    margin-top: 0%;
+    background-color: var( --backgroud-color-blue);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.titulo2{
+    color: var(--secondary-color-yellow);
+    font-size: 28px;
+    margin-top: 30px;
+    margin-left: 15%;
+
+}
+
+.prg1{
+    font-family: "Josefin_Slab";
+    margin-left:  90px;
+    margin-right: 100px;
+}
+
+.prg2{
+    font-family: "Josefin_Slab";
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+#calculator2{
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 17px;
+}
+
+#eletric-pokemon-5{
+    width: 750px;
+    height: 600px;
+    margin-left: 609px;
+    margin-top: -490px;
+}
