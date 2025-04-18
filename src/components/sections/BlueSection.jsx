@@ -1,14 +1,16 @@
-import './sectionB.css'
+
 import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (4).png"
 
 
-function SectionB(props) {
+function BlueSection(props) {
 
     return (
 
-    <section id='background2'>
-      <div id="sectionB">
-                <br></br>
+        <div id="background" >
+               <div id="sectionB" >
+               <div  className="container "> 
+        <div className="text-center" >
+        <br></br>
                 <img id="arrow-white" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACQCAYAAAD9egI2AAAAAXNSR0IA
                 rs4c6QAAEAJJREFUeF7tnX2UXVV1wPd+93vPzBuIijpVZPlFF7VdFZYrtS1YqnwKCKSIxUShQiBLC0opUkKhoK1t
                 FaM1ElQ+/MIAKpjyUb4kC1BAbdF2uaJtpdBYJxDIzHszb867X+/u5pibtXBMZs59mXffPe+d809Wkr3P2Wfv39y55
@@ -73,40 +75,53 @@ function SectionB(props) {
                 DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12
                 wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCna
                 eB0NdsAp2vkNLX7/wHNlE3cG8gUiwAAAABJRU5ErkJggg==" alt='arrow-up-image'>{props.arrow}</img> 
-
-
-        
-            <div>
-                <h1 className='titulo'>{props.title}Faça a sua parte para um futuro mais sustentável!</h1><br></br>
-                    <br></br> 
-                <p className='paragraph11'>{props.text}Reduzir o consumo de energia é essencial para <br></br> combater as alterações 
-                    climáticas e criar um <br></br> futuro mais sustentável. Pequenas mudanças em <br></br> nossos hábitos diários podem fazer uma
-                    grande <br></br> diferença.<br></br>
-
-                <p className='paragraph22'> <br></br> • Apague as luzes quando sair de um cômodo.<br></br>
-                 • Desligue aparelhos eletrônicos e <br></br> eletrodomésticos quando não estiverem em<br></br> uso.<br></br>
-                 • Use lâmpadas LED ou fluorescentes <br></br> compactas, que são mais eficientes em termos <br></br> de energia.<br></br>
-                 • Instale um termostato programável para <br></br> regular a temperatura da sua casa.<br></br>
-                 • Vede portas e janelas para evitar correntes <br></br> de ar.<br></br>
-                 • Tome banhos mais curtos e frios.<br></br>
-                 • Feche a torneira quente enquanto escova os <br></br> dentes ou faz a barba em dias frios.<br></br>
-                 <img id="eletric-pokemon-4" src={eletric_pokemon} alt='eletric-pokemon-4'>{props.pokemon}</img>
-                </p>
-
-                  
-
-                </p>
-
-                
-                 
-           </div>
+        </div>
+      
+        {/* Container principal mantendo a estrutura original */}
+     
+          <div className=" row align-items-center">
+            {/* Coluna de texto - esquerda */}
+            <div className="col-md-7">
+              <h1 className='titulo'>{props.title}Faça a sua parte para um futuro mais sustentável!</h1>
+         <article className=" text-white w-100">
+              <p className='paragraph11'>
+                {props.text}Reduzir o consumo de energia é essencial para <br />
+                combater as alterações climáticas e criar um <br />
+                futuro mais sustentável. Pequenas mudanças em <br />
+                nossos hábitos diários podem fazer uma grande <br />
+                diferença.<br />
+              </p>
+      
+              <p className='paragraph22 '>
+                • Apague as luzes quando sair de um cômodo.<br />
+                • Desligue aparelhos eletrônicos e <br /> eletrodomésticos quando não estiverem em<br /> uso.<br />
+                • Use lâmpadas LED ou fluorescentes <br /> compactas, que são mais eficientes em termos <br /> de energia.<br />
+                • Instale um termostato programável para <br /> regular a temperatura da sua casa.<br />
+                • Vede portas e janelas para evitar correntes <br /> de ar.<br />
+                • Tome banhos mais curtos e frios.<br />
+                • Feche a torneira quente enquanto escova os <br /> dentes ou faz a barba em dias frios.<br />
+              </p>
+              </article>
+            </div>
+          
+            {/* Coluna da imagem - direita */}
+            <div className="col-md-5 d-flex justify-content-center">
+              <img 
+                className="pokemon-section" 
+                src={eletric_pokemon} 
+                alt='eletric-pokemon-4'
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+              {props.pokemon}
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
-
-      </section>
 
 
 );}
 
 
 
-export default SectionB
+export default BlueSection

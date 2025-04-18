@@ -1,4 +1,4 @@
-import './sectionC.css'
+
 import eletric_pokemon from "../../assets/pokemons/eletric_pokemon (3).png"
 
 function SectionC(props) {
@@ -7,7 +7,7 @@ function SectionC(props) {
     <section id="background">
 
       <div id='sectionC'>
-        <div id="arrow" >
+        <div className="arrow" >
          <br></br> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My
             5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAw
             IDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTMuNjYsMTk0LjM0YTgsOCwwLDAsMS0xMS4zMiwxMS4zMkwxMjgsMTMxLjMxLDUzL
@@ -33,7 +33,7 @@ function SectionC(props) {
 
         </p>
 
-        <img id="pokemon-sectionC" src={eletric_pokemon} alt='pokemon-eletric3'>{props.pokemon}</img>
+        <img className="pokemon-section" src={eletric_pokemon} alt='pokemon-eletric3'>{props.pokemon}</img>
 
         </div> 
     
