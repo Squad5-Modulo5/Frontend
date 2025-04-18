@@ -1,7 +1,6 @@
 
 import { BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Home from "../views/home/home";
-import "./index.css"
 import Login from "../views/login";
 import Private from "../views/private";
 
