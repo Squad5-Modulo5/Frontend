@@ -18,9 +18,9 @@ function Calculatealone() {
     setResult(null);
 
     try {
-      const response = await blogFetch.post(`/consumpition/createconsumpition`, values);
+      const response = await blogFetch.post(`/consumpition/noreletion`, values);
       console.log("Response: ", response);
-      setResult(response?.data.newConsumption);
+      setResult(response?.data);
     } catch (err) {
       if (err instanceof AxiosError) {
         setError(err.response?.data.message || "An error occurred");

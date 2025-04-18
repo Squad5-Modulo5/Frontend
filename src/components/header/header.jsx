@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import Button from "../button/button.jsx";
 import "./header.css"
 
-export default function Header ({home, link1, link2, calculate, butonlink,name}){
+export default function Header ({home, link1, link2, calculate,name}){
     return(
         <div className="header">
             <img id= "header-logo" src={ecoelektLogo} alt="ecoelekt-logo" />
@@ -13,7 +13,7 @@ export default function Header ({home, link1, link2, calculate, butonlink,name})
                 <li><Link to={link2}>{calculate}</Link></li>
             
             </ul>
-            <Button link={butonlink} name={name}/>
+           {/* <Button link={butonlink} name={name}/>*/}
         
         </div>
     )
