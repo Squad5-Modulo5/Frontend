@@ -75,46 +75,45 @@ function BlueSection(props) {
                 DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12
                 wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCna
                 eB0NdsAp2vkNLX7/wHNlE3cG8gUiwAAAABJRU5ErkJggg==" alt='arrow-up-image'>{props.arrow}</img> 
+        <h1 className='titulo'>{props.title}Faça a sua parte para um futuro mais sustentável!</h1>
+    
         </div>
       
         {/* Container principal mantendo a estrutura original */}
-     
-          <div className=" row align-items-center">
-            {/* Coluna de texto - esquerda */}
-            <div className="col-md-7">
-              <h1 className='titulo'>{props.title}Faça a sua parte para um futuro mais sustentável!</h1>
-         <article className=" text-white w-100">
-              <p className='paragraph11'>
-                {props.text}Reduzir o consumo de energia é essencial para <br />
-                combater as alterações climáticas e criar um <br />
-                futuro mais sustentável. Pequenas mudanças em <br />
-                nossos hábitos diários podem fazer uma grande <br />
-                diferença.<br />
-              </p>
-      
-              <p className='paragraph22 '>
-                • Apague as luzes quando sair de um cômodo.<br />
-                • Desligue aparelhos eletrônicos e <br /> eletrodomésticos quando não estiverem em<br /> uso.<br />
-                • Use lâmpadas LED ou fluorescentes <br /> compactas, que são mais eficientes em termos <br /> de energia.<br />
-                • Instale um termostato programável para <br /> regular a temperatura da sua casa.<br />
-                • Vede portas e janelas para evitar correntes <br /> de ar.<br />
-                • Tome banhos mais curtos e frios.<br />
-                • Feche a torneira quente enquanto escova os <br /> dentes ou faz a barba em dias frios.<br />
-              </p>
-              </article>
-            </div>
-          
-            {/* Coluna da imagem - direita */}
-            <div className="col-md-5 d-flex justify-content-center">
-              <img 
-                className="pokemon-section" 
-                src={eletric_pokemon} 
-                alt='eletric-pokemon-4'
-                style={{ maxWidth: '100%', height: 'auto' }}
-              />
-              {props.pokemon}
-            </div>
-          </div>
+        <div className="row align-items-center">
+  {/* Coluna de texto - esquerda (sem mudanças) */}
+  <div className="col-md-7">
+   
+  <article className="text-white w-100">
+  <p className='paragraph11 mb-4'>
+    Reduzir o consumo de energia é essencial para combater as alterações climáticas e criar um futuro mais sustentável. Pequenas mudanças em nossos hábitos diários podem fazer uma grande diferença.
+  </p>
+
+  <ul className="energy-tips-list  ps-3 fw-normal text-lowercase my-2 ms-5">
+    <li className="fw-normal">Apague as luzes quando sair de um cômodo</li>
+    <li className="fw-normal">Desligue aparelhos eletrônicos e eletrodomésticos quando não estiverem em uso</li>
+    <li className="fw-normal">Use lâmpadas LED ou fluorescentes compactas, que são mais eficientes em termos de energia</li>
+    <li className="fw-normal">Instale um termostato programável para regular a temperatura da sua casa</li>
+    <li className="fw-normal">Vede portas e janelas para evitar correntes de ar</li>
+    <li className="fw-normal">Tome banhos mais curtos e frios</li>
+    <li className="fw-normal">Feche a torneira quente enquanto escova os dentes ou faz a barba em dias frios</li>
+    </ul>
+</article>
+ 
+  </div>
+  
+  {/* Coluna da imagem - direita (apenas adicionei mt-3 para espaçamento no mobile) */}
+  <div className="col-md-5 d-flex justify-content-center mt-3 mt-md-0">
+    <img 
+      className="pokemon-section mt-5" 
+      src={eletric_pokemon} 
+      alt='eletric-pokemon-4'
+      style={{ maxWidth: '100%', height: 'auto' }}
+    />
+    {props.pokemon}
+  </div>
+</div>
+   
         </div>
         </div>
       </div>

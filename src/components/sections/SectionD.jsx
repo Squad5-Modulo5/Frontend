@@ -8,9 +8,10 @@ function SectionD(props) {
 
     return (
 
-         <section id="found-color">
-             <div id="sectionD">
-                <br></br>
+         <section id="background">
+             <div id="sectionB">
+             <div  className="container "> 
+             <div className="text-center pt5" >
                 <img id="arrow-white" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACQCAYAAAD9egI2AAAAAXNSR0IA
                 rs4c6QAAEAJJREFUeF7tnX2UXVV1wPd+93vPzBuIijpVZPlFF7VdFZYrtS1YqnwKCKSIxUShQiBLC0opUkKhoK1t
                 FaM1ElQ+/MIAKpjyUb4kC1BAbdF2uaJtpdBYJxDIzHszb867X+/u5pibtXBMZs59mXffPe+d809Wkr3P2Wfv39y55
@@ -75,10 +76,11 @@ function SectionD(props) {
                 DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12
                 wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCna
                 eB0NdsAp2vkNLX7/wHNlE3cG8gUiwAAAABJRU5ErkJggg==" alt='arrow-up-image'>{props.arrow}</img> 
-
-
-            <div className='textos'>
                     <h1 className='titulo2'>{props.title}Calcule o consumo de energia da sua casa</h1>
+    
+    </div>
+
+            <div className='textos text-white'>
                     <p className='prg1'>{props.text}Descubra quanto sua casa consome de energia e <br></br> identifique áreas onde você
                     pode economizar <br></br> dinheiro. Use nossa calculadora de consumo de <br></br> energia gratuita para obter uma 
                     análise <br></br> personalizada do uso de energia da sua casa. <br></br> Basta inserir algumas informações básicas e nós
@@ -92,6 +94,7 @@ function SectionD(props) {
             </div>
 
 
+             </div>
              </div>
          </section>
 

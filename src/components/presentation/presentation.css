@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
     background-color: var(--backgroud-color-blue);
+    position: relative;
+    z-index: 1;
+    padding-bottom: 41px; /* Espaço para a sobreposição */
+    
 }
 
 .texts {
@@ -42,10 +46,6 @@
     /* background-color: black; */
     position: relative;
     margin-top: 52px;
-    margin-left: 90px;
-    margin-right: -66px;
-    z-index: 1;
-    width:522px;
-    height:423.13px;
+    height:100%;
 
 }
