@@ -8,11 +8,11 @@ function SectionD(props) {
 
     return (
 
-         <section id="background">
-             <div id="sectionB">
-             <div  className="container "> 
-             <div className="text-center pt5" >
-                <img id="arrow-white" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACQCAYAAAD9egI2AAAAAXNSR0IA
+        <section id="background">
+            <div id="sectionB">
+                <div className="container ">
+                    <div className="text-center pt5" >
+                        <img id="arrow-white" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACQCAYAAAD9egI2AAAAAXNSR0IA
                 rs4c6QAAEAJJREFUeF7tnX2UXVV1wPd+93vPzBuIijpVZPlFF7VdFZYrtS1YqnwKCKSIxUShQiBLC0opUkKhoK1t
                 FaM1ElQ+/MIAKpjyUb4kC1BAbdF2uaJtpdBYJxDIzHszb867X+/u5pibtXBMZs59mXffPe+d809Wkr3P2Wfv39y55
                 2Pvi2Ca8UCJHsASxzJDGQ+AAc5AUKoHDHClutsMZoAzDJTqAQNcqe42gxngDAOlesAAV6q7zWAGOMNAqR4wwJXqb
@@ -75,31 +75,34 @@ function SectionD(props) {
                 Kdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5
                 DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12
                 wCna+Q0tdsAp2ngdDXbAKdr5DS12wCnaeB0NdsAp2vkNLXbAKdp4HQ12wCna+Q0tdsAp2ngdDXbAKdr5DS12wCna
-                eB0NdsAp2vkNLX7/wHNlE3cG8gUiwAAAABJRU5ErkJggg==" alt='arrow-up-image'>{props.arrow}</img> 
-                    <h1 className='titulo2'>{props.title}Calcule o consumo de energia da sua casa</h1>
-    
-    </div>
+                eB0NdsAp2vkNLX7/wHNlE3cG8gUiwAAAABJRU5ErkJggg==" alt='arrow-up-image'>{props.arrow}</img>
+                        <h1 className='titulo2'>{props.title}Calcule o consumo de energia da sua casa</h1>
 
-            <div className='textos text-white'>
-                    <p className='prg1'>{props.text}Descubra quanto sua casa consome de energia e <br></br> identifique áreas onde você
-                    pode economizar <br></br> dinheiro. Use nossa calculadora de consumo de <br></br> energia gratuita para obter uma 
-                    análise <br></br> personalizada do uso de energia da sua casa. <br></br> Basta inserir algumas informações básicas e nós
-                    <br></br> faremos o resto. Com essas informações valiosas, <br></br> você pode tomar decisões informadas e <br></br>
-                    implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro.</p>
-                    <p className='prg2'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo!</p> 
+                    </div>
+                    <div className="row align-items-center">
+                    <div className="col-md-7">
+                    <article className="text-white w-100">
+                    <p className='paragraph11 justfy-content  mb-4'>
+                            {props.text}Descubra quanto sua casa consome de energia e <br></br> identifique áreas onde você
+                            pode economizar <br></br> dinheiro. Use nossa calculadora de consumo de <br></br> energia gratuita para obter uma
+                            análise <br></br> personalizada do uso de energia da sua casa. <br></br> Basta inserir algumas informações básicas e nós
+                            <br></br> faremos o resto. Com essas informações valiosas, <br></br> você pode tomar decisões informadas e <br></br>
+                            implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro.</p>
+
+                        <p className='prg2'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo!</p>
+                    </article>
                     <button id='calculator2'>{props.calculator}<Link to={`/calculate`}>CALCULADORA</Link></button>
-                   
-                    
-                    <img id='eletric-pokemon-5' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img> 
+                    </div>
+                    <img id='eletric-pokemon-5' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img>
+
+                </div>
+                </div>
             </div>
+        </section>
 
 
-             </div>
-             </div>
-         </section>
-
-
-);}
+    );
+}
 
 
 
