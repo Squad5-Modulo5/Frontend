@@ -1,6 +1,4 @@
 import "./home.css"
-import Footer from "../../components/footer/footer"
-import Header from "../../components/header/header"
 import Presentation from "../../components/presentation/presentation"
 import WhiteSection from "../../components/sections/WhiteSection.jsx";
 
@@ -12,7 +10,6 @@ import SectionD from "../../components/sections/SectionD.jsx";
 export default function Home (){
     return(
         <>
-            <Header link1={`/`} link2={`/calculate`} home={"Home"} calculate={"Cauculadora"} butonlink={`/login`} name={`login`}/>
             <div className="sections">
             <Presentation/>
             <WhiteSection/>
@@ -20,7 +17,7 @@ export default function Home (){
             <SectionC/>
             <SectionD/>
             </div>
-            <Footer/>
+           
 
         </>
     )

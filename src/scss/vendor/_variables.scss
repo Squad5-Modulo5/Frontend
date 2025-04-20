@@ -8,12 +8,13 @@
     src: url('../../../public/fonts/Silkscreen/Silkscreen-Regular.ttf');
   }
   html, body {
-    height: 100%;
+   
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Esconde a barra de rolagem horizontal, se não for necessária */
+    box-sizing: border-box;
+   
   }
-
+ 
 :root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
