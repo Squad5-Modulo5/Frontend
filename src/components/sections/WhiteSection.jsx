@@ -23,7 +23,7 @@ function WhiteSection(props) {
         </div>
 
 
-        <div className=" mag row align-items-center">
+        <div className=" row align-items-center">
           <div className="col-md-7">
             <img className="pokemon-section mt-5" src={EletricSecondpokemon} alt='pokemon-eletric2'>{props.pokemon}</img>
           </div>

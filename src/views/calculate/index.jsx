@@ -1,4 +1,3 @@
-import "./calculete.css"
 import { AxiosError } from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

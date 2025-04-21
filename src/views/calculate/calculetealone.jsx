@@ -1,4 +1,3 @@
-import "./calculete.css"
 import { AxiosError } from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -32,9 +31,9 @@ function Calculatealone() {
   };
 
   return (
-      <div className="logo-calculete">
+      <div className="logo-calculete mb-5 w-100 ">
         <img id="ecoelekt-logo-calculate" src={ecoelektLogo} alt="ecoelekt-logo"/>
-        <div className="space-calculate">
+        <div className="space-calculate w-100">
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <h2>CALCULAR Kwh/h</h2>
             <input type="hidden" name="remember" defaultValue="true"/>
@@ -108,7 +107,7 @@ function Calculatealone() {
               <button type="submit">RESULTADO</button>
             </div>
             {result && (
-                <div className="result">
+                <div className="result w-100">
                   <ul>
                     <li>MEDIDAS: {result.Measurement}</li>
                     <li>POTÊNCIA: {result.power}</li>
