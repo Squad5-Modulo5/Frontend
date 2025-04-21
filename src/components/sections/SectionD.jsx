@@ -79,23 +79,31 @@ function SectionD(props) {
                         <h1 className='titulo2'>{props.title}Calcule o consumo de energia da sua casa</h1>
 
                     </div>
-                    <div className="row align-items-center">
-                    <div className="col-md-7">
-                    <article className="text-white w-100">
-                    <p className='paragraph11 justfy-content  mb-4'>
-                            {props.text}Descubra quanto sua casa consome de energia e <br></br> identifique áreas onde você
-                            pode economizar <br></br> dinheiro. Use nossa calculadora de consumo de <br></br> energia gratuita para obter uma
-                            análise <br></br> personalizada do uso de energia da sua casa. <br></br> Basta inserir algumas informações básicas e nós
-                            <br></br> faremos o resto. Com essas informações valiosas, <br></br> você pode tomar decisões informadas e <br></br>
-                            implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro.</p>
+                    <div className="row align-items-end">
+                        <div className="col-md-7 ">
+                            <article className="text-white w-100 ">
+                                <p className='paragraph11 justfy-content  mb-4'>
+                                    {props.text}Descubra quanto sua casa consome de energia e <br></br> identifique áreas onde você
+                                    pode economizar <br></br> dinheiro. Use nossa calculadora de consumo de <br></br> energia gratuita para obter uma
+                                    análise <br></br> personalizada do uso de energia da sua casa. <br></br> Basta inserir algumas informações básicas e nós
+                                    <br></br> faremos o resto. Com essas informações valiosas, <br></br> você pode tomar decisões informadas e <br></br>
+                                    implementar mudanças simples para reduzir seu <br></br> consumo de energia e economizar dinheiro.</p>
 
-                        <p className='prg2'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo!</p>
-                    </article>
-                    <button id='calculator2'>{props.calculator}<Link to={`/calculate`}>CALCULADORA</Link></button>
+                              <div className="d-flex justify-content-end">
+                              <p className='paragraph text-white'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo! 
+                              </p>
+                        
+                            <button id='calculator2' className='my-5' >{props.calculator}<Link to={`/calculate`}>CALCULADORA</Link></button>
+                         </div>
+                  
+                            
+                            </article>
+                           
+                        </div>
+                        <div className='col-md-5 d-flex justify-content-center mt-md-0 pt-5 mt-5 '>
+                            <img id='eletric-pokemon-5' className='' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img>
+                        </div>
                     </div>
-                    <img id='eletric-pokemon-5' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img>
-
-                </div>
                 </div>
             </div>
         </section>
