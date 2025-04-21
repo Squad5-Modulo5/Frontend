@@ -1,23 +1,16 @@
 .presentation{
-    margin: 0;
-    height: 475px;
-    display: flex;
+ 
     align-items: center;
     justify-content: center;
     background-color: var(--backgroud-color-blue);
+   
+    
 }
 
-.texts {
-    /* background-color: red; */
-    margin-top: -130px;
-    margin-left: 0px;
-    margin-right:-300px;
-    height: 110px;
-}
 
 .presentation h1 {
     font-family: "Silkscreen";
-    font-size: 35px;
+    font-size: 40px !important;
     color: var(--primary-color-yellow);
 }
 .presentation h2 {
@@ -32,20 +25,32 @@
     font-family:'Josefin_slab';
     font-size: 30px;
     color: var(--off-white);
-    margin-left: 6px; 
-    height: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+   
     
 
 }
 
-#image {
-    /* background-color: black; */
-    position: relative;
-    margin-top: 52px;
-    margin-left: 90px;
-    margin-right: -66px;
-    z-index: 1;
-    width:522px;
-    height:423.13px;
 
+@media (min-width: 1001px) {
+    #image {
+        /* background-color: black; */
+        position: relative;
+       
+        height:100%;
+    
+    }
+}
+
+/* Opcional: ajuste para mobile */
+@media (max-width: 1000px) {
+    #image {
+        /* background-color: black; */
+        position: relative;
+       
+       
+    
+    }
 }

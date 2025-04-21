@@ -1,7 +1,6 @@
 
 import { BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Home from "../views/home/home";
-import "./index.css"
 import Login from "../views/login";
 import Private from "../views/private";
 
@@ -11,6 +10,7 @@ import SectionCalculate from "../components/sections/sectionCalculate.jsx";
 import AuthOutlet from "@auth-kit/react-router/AuthOutlet";
 import Regiteruser from "../views/register/index.jsx";
 import ListProducts from "../views/lists/Listsproducts.jsx";
+import Layout from "../components/Layout/index.jsx";
 
 
 
@@ -18,8 +18,10 @@ const RoutesApp = () => {
   return (
     <HashRouter>
     <Routes>
+    <Route path="/" element={<Layout />}>
       <Route path={'/'} element={<Home/>}/>
       <Route path={'/calculate' } element={<SectionCalculate/>}/>
+    </Route>
       <Route path={'/register'} element={<Regiteruser/>}/>
       <Route path={'/login' } element={<Login/>}/>
       <Route element={<AuthOutlet fallbackPath='/login' />}>

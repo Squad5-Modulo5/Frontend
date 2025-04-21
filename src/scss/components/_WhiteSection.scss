@@ -1,0 +1,167 @@
+#sectionC {
+
+    width: 100%;
+    margin-top: 0%;
+    background-color: var(--primary-color-primary);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+
+}
+
+.pokemon-section {
+    width: 620px;
+    height: 800px;
+    margin-top: -520px;
+    margin-left: 0px;
+}
+
+.arrow {
+    background-color: var(--primary-color-primary);
+
+}
+
+.title {
+
+
+    color: var(--terciary-color-green);
+    font-family: "Silkscreen";
+    font-size: 35px;
+
+}
+
+
+
+p {
+
+    font-size: 30px;
+}
+
+.paragraph {
+    color: black;
+    font-family: "Josefin_Slab", serif;
+    /* Adicione fallback (serif) */
+    text-align: justify;
+    text-justify: inter-word;
+    /* Melhora a distribuição do texto */
+    line-height: 1.6;
+    /* Espaçamento entre linhas */
+}
+
+/* Apenas para telas maiores que 1000px */
+@media (min-width: 1001px) {
+    .paragraph {
+        width: 700px;
+        /* Largura fixa apenas em telas grandes */
+        margin: 0 auto;
+        /* Centraliza o bloco */
+    }
+}
+
+/* Opcional: ajuste para mobile */
+@media (max-width: 1000px) {
+    .paragraph {
+        padding: 0 15px;
+        /* Adiciona respiro nas laterais */
+        hyphens: auto;
+        /* Hifenização para melhor justificação */
+    }
+}
+
+
+#sectionA {
+    width: 100%;
+
+
+    background-color: var(--primary-color-primary);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+
+
+
+
+
+
+
+}
+
+.overlapping-section {
+    position: relative;
+    z-index: 2;
+    margin-top: -20px;
+    /* Ajuste este valor conforme necessário */
+
+    border-radius: 20px 20px 0 0;
+    /* Opcional: arredonda os cantos superiores */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    /* Opcional: sombra sutil */
+
+}
+
+// blue
+
+#arrow-white {
+    width: 40px;
+    height: 40px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.energy-tips-list {
+    list-style-type: disc;
+    /* Mantém as bolinhas */
+    padding-left: 1.5rem;
+    /* Espaçamento adequado */
+
+}
+
+.energy-tips-list li {
+    font-family: "Josefin_Slab", sans-serif !important;
+    /* Fonte personalizada */
+    /* Cor do texto */
+    font-size: xx-large !important;
+}
+
+/* Remove especificamente o all: initial que estava causando problemas */
+
+#sectionB {
+    background-color: var(--primary-color-primary);
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--backgroud-color-blue);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+
+#arrow {
+    margin-top: 0px;
+}
+
+
+.titulo {
+    color: var(--secondary-color-yellow);
+    font-size: 28px;
+}
+
+.paragraph11 {
+    font-family: "Josefin_Slab";
+
+}
+
+.paragraph22 {
+    font-family: "Josefin_Slab" !important;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.paragraph22 ul {
+    font-family: "Josefin_Slab" !important;
+
+
+}
