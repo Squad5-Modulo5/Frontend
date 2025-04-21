@@ -93,12 +93,12 @@ function SectionD(props) {
                               <p className='paragraph text-white'>{props.text} Clique no botão abaixo para acessar a <br></br> calculadora agora mesmo! 
                               </p>
                         
-                            <button id='calculator2' className='my-5' >{props.calculator}<Link to={`/calculate`}>CALCULADORA</Link></button>
                          </div>
                   
                             
                             </article>
-                           
+                            <button id='calculator2' className='my-5' >{props.calculator}<Link to={`/calculate`}>CALCULADORA</Link></button>
+
                         </div>
                         <div className='col-md-5 d-flex justify-content-center mt-md-0 pt-5 mt-5 '>
                             <img id='eletric-pokemon-5' className='' src={eletric_pokemon} alt='eletric-pokemon-5'>{props.pokemon}</img>
