@@ -16,6 +16,10 @@
 #header-logo {
     height: 1rem;
 }
+.Navbar{
+
+    background-color: var(--backgroud-color2-blue);
+}
 
 .header-links{
     margin: 0;
@@ -25,14 +29,37 @@
     list-style-type: none;
 }
 
-.header-links li a{
+.header-links .nav-link {
     color: var(--primary-color-primary);
     text-decoration: none;
     margin: 0rem 1rem 0rem 1rem;
 }
-.header-links li a:hover{
+
+.header-links .nav-link:hover {
     color: var(--primary-color-yellow);
 }
+.navbar-toggler {
+    /* Estilos gerais do botão toggle */
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .navbar-toggler:hover {
+    /* Estilos ao passar o mouse */
+    opacity: 0.8;
+  }
+  
+  .navbar-toggler-icon {
+   
+  
+    padding: 5%;
+   
+    background-color:  var(--primary-color-yellow);
+ 
+  }
+  
+  
 @media (max-width: 768px) {
     .header {
     font-size: x-small;
@@ -44,7 +71,13 @@
     }
 
     .button-container {
-        margin-left: 0;
+        margin-left: 10px;
         margin-top: 10px;
+    }
+    .Navbar{
+        width: 100%;
+        margin-top: -17px;
+        background-color: var(--backgroud-color2-blue);
+        border-radius: 0px 0px 20px 20px;
     }
 }
